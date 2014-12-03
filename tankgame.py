@@ -9,6 +9,11 @@ while alive_tanks > 1:
     first = raw_input("Who fires? ").lower()
     second = raw_input("Who at? ").lower()
     
+    if first == second:
+        print "Can't fire at yourself!"
+        continue
+
+    
     try:
         first_tank = tanks[first]
         second_tank = tanks[second]
