@@ -1,5 +1,10 @@
 from tank import Tank
 tanks = {"a":Tank("Alice"), "b":Tank("Bob"), "c":Tank("Carol")}
+# experimenting with manually creating a new tank 'f'
+f = Tank("Fred")
+# adding the new manual tank to the dictionary of tanks
+tanks['f'] = f
+
 alive_tanks = len(tanks)
 while alive_tanks > 1:
     print
